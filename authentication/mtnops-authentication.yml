@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://mtnops.com/.well-known/openid-configuration
+note: >-
+  MTN OPS is a Shopify storefront. Customer-facing authentication is handled by
+  Shopify New Customer Accounts via OpenID Connect / OAuth 2.0. The values below
+  are read verbatim from the live OIDC discovery document on the mtnops.com
+  domain. There is no separate MTN OPS developer API auth surface.
+schemes:
+- type: openIdConnect
+  name: shopify-customer-accounts
+  issuer: https://shopify.com/authentication/27864584
+  openid_configuration: https://mtnops.com/.well-known/openid-configuration
+  authorization_endpoint: https://shopify.com/authentication/27864584/oauth/authorize
+  token_endpoint: https://shopify.com/authentication/27864584/oauth/token
+  end_session_endpoint: https://shopify.com/authentication/27864584/logout
+  jwks_uri: https://shopify.com/authentication/27864584/.well-known/jwks.json
+  response_types_supported:
+  - code
+  grant_types_supported:
+  - authorization_code
+  - refresh_token
+  - urn:ietf:params:oauth:grant-type:jwt-bearer
+  token_endpoint_auth_methods_supported:
+  - client_secret_basic
+  id_token_signing_alg_values_supported:
+  - RS256
+  code_challenge_methods_supported:
+  - S256
+  scopes_supported:
+  - openid
+  - email
+  - customer-account-api:full
+  - customer-account-mcp-api:full

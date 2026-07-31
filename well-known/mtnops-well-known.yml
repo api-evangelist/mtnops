@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://mtnops.com/.well-known/
+host: https://mtnops.com
+note: >-
+  MTN OPS runs on the Shopify platform. The machine-readable discovery documents
+  below are served by Shopify's New Customer Accounts (OIDC) surface on the
+  mtnops.com apex domain. There is no bespoke MTN OPS public API; these are the
+  real, live platform-provided discovery endpoints.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: mtnops-openid-configuration.json
+  description: OIDC discovery for Shopify Customer Accounts (issuer shopify.com/authentication/27864584)
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: mtnops-oauth-authorization-server.json
+  description: RFC 8414 authorization server metadata (identical payload to the OIDC document)
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
