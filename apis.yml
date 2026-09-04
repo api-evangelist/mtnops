@@ -33,15 +33,16 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://mtnops.com/cdn/shop/files/Stretch_Logo_-_Grey-Orange_881ebcf3-f902-459c-ad2e-a8d5d95c3632.svg?v=1704300859
 specificationVersion: '0.23'
