@@ -47,7 +47,7 @@ accessModel:
 image: https://mtnops.com/cdn/shop/files/Stretch_Logo_-_Grey-Orange_881ebcf3-f902-459c-ad2e-a8d5d95c3632.svg?v=1704300859
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 tags:
 - Company
 - E-Commerce
@@ -73,6 +73,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://mtnops.com/blogs/journal
+  type: Blog
+- url: https://mtnops.com/blogs/journal.atom
+  type: BlogRSS
 - type: Website
   url: https://mtnops.com
 - type: Support
